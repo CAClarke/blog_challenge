@@ -1,0 +1,74 @@
+{
+  "posts": [
+    {
+      "title": "test2",
+      "date": "today",
+      "article_text": "",
+      "article_img": "https://cdn.pixabay.com/photo/2018/02/23/09/01/binary-3175017_960_720.jpg",
+      "submit_post": "Post Article",
+      "id": 1
+    },
+    {
+      "title": "test1",
+      "date": "today",
+      "article_text": "",
+      "article_img": "https://cdn.pixabay.com/photo/2018/02/23/09/01/binary-3175017_960_720.jpg",
+      "submit_post": "Post Article",
+      "id": 2
+    },
+    {
+      "article_title": "A title for an article",
+      "article_date": "06/10/86",
+      "article_text": "This is a new articledfrhjgfoiejkdmsla;kdfb",
+      "article_img": "https://cdn.pixabay.com/photo/2017/01/10/23/01/code-1970468_960_720.png",
+      "id": 3
+    }
+  ],
+  "comments":[],
+  "users": [
+    {
+      "full_name": "Carrie Clarke",
+      "username": "Azilver",
+      "email_address": "azilver@hotmail.com",
+      "user_password": "pasworded",
+      "id": 1
+    },
+    {
+      "full_name": "John Doe",
+      "username": "Person1",
+      "email_address": "email@email.com",
+      "user_password": "persondoe",
+      "id": 2
+    },
+    {
+      "username": "Azilver",
+      "password": "pasworded",
+      "submit": "Go!",
+      "id": 3
+    },
+    {
+      "username": "Azilver",
+      "password": "psassword",
+      "submit": "Go!",
+      "id": 4
+    },
+    {
+      "username": "Azilver",
+      "password": "pasworded",
+      "submit": "Go!",
+      "id": 5
+    },
+    {
+      "username": "htgrfedgfr",
+      "password": "efegrg",
+      "submit": "Go!",
+      "id": 6
+    },
+    {
+      "username": "Azilver",
+      "password": "pasworded",
+      "submit": "Go!",
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- navbar start -->
+    <div class="navigation_container">
+      <nav class="navbar bg-dark navbar-dark justify-content-around fixed-top">
+        <a href="index.html"><img src="images/home-button.jpg" alt="Home button" id="home-button">ome </a>
+        <a href="archive.html">| Archive |</a>
+        <a href="index.html">| Register |</a>
+        <a href="create_page.html">| Contribute |</a>
+
+      </nav>
+    </div>
+    <!-- navbar end -->
+    <h1 class="heading">Login to contribute</h1>
+
+    <div class="authentication-container">
+      <img src="images/code-girl.jpg" alt="code girl" class="authentication-image">
+
+      <form class="authentication-form" action="create_page.html" method="get">
+        <p>
+          <input type="text" name="username" value="" class="authenticate-username" placeholder=" username" required>
+        </p>
+        <p>
+          <input type="password" name="password" value="" class="authenticate-password" placeholder=" password">
+        </p>
+        <p>
+          <input type="submit" name="" value="Go!" class="authenticate-submit btn btn-sm btn-outline-primary"
+
+          <a href="index.html"><input type="text" name="" value="Register" class="btn btn-sm btn-outline-primary"></a>
+        </p>
+        <hr>
+        <p class="notice"></p>
+
+      </form>
+    </div>
+
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){//jquery start
+
+      $('.authentication-form').submit(function(event){
+        event.preventDefault();
+        //request to USERS to find specific user with filter
+      let username =  $('.authenticate-username').val();
+      let password =  $('.authenticate-password').val();
+      console.log(username)
+      debugger;
+
+      $getJSON('http://localhost:3000/users?username='+username, function(users){
+
+        if(users.length > 0){
+        let found_user_password = data[0].user_password;
+        console.log(found_user_password)
+        debugger;
+          if(found_user_password == password){
+            window.location.href = 'create_page.html';
+          }else(found_user_password != password){
+            $('.notice').html('Password incorrect, please try again').show();
+          };
+        }else{
+          $('.notice').html('User not found, please register to contribute to this blog.').show();
+        };
+      }
+      });
+
+      });//jquery end
+
+
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Archive</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- navbar start -->
+    <div class="navigation_container">
+      <nav class="navbar bg-dark navbar-dark justify-content-around fixed-top">
+        <a href="index.html"><img src="images/home-button.jpg" alt="Home button" id="home-button">ome </a>
+        <a href="archive.html">| Archive |</a>
+        <a href="index.html">| Register |</a>
+        <a href="authentication.html">| Contribute |</a>
+
+      </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- archiving start  -->
+    <h1  class="heading" style="margin-top: 10px;">Archived Articles</h1>
+
+    <hr>
+
+    <div class="archived_articles_container">
+
+      <div class="articles_archive_display">
+      </div>
+
+    </div>
+    <!-- archiving end  -->
+
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){//jquery start
+
+
+      $.getJSON("http://localhost:3000/posts", function(posts){
+        //loop to display
+        for(post of posts){
+        var article_title =(post.article_title);
+        var article_img =(post.article_img);
+        var article_id =(post.id);
+        console.log(post.id)
+
+        $('.articles_archive_display').append('<h4 class="archive_article_title" style="background-image: url(' + article_img + ');height: 300px; background-position: center bottom; background-repeat: no-repeat;"><a style="background-color: #343a40; color: white;" href="article_page.html/' +article_id+ '">' + article_title + '</a></h4>');
+        };//loop end
+
+      });//json end
+
+    });//jquery end
+
+</script>
+
+</html>

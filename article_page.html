@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Article</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+
+    <body>
+      <!-- navbar start -->
+      <div class="navigation_container">
+        <nav class="navbar bg-dark navbar-dark justify-content-around fixed-top">
+          <a href="index.html"><img src="images/home-button.jpg" alt="Home button" id="home-button">ome </a>
+          <a href="archive.html">| Archive |</a>
+          <a href="index.html">| Register |</a>
+          <a href="create_page.html">| Contribute |</a>
+
+        </nav>
+      </div>
+      <!-- navbar end -->
+    <hr>
+    <!-- article body start  -->
+
+    <div class="article_container">
+
+      <!-- <h1 class="article_title" style="background-color:blue;">Title</h1>
+      <p class="article_date" style="background-color:blue;">date</p>
+      <p class="article_text" style="background-color:blue;">article</p>
+      <img src="https://cdn.pixabay.com/photo/2017/08/25/13/36/code-geek-2680204_960_720.png" alt="" class="article_image"> -->
+
+    </div>
+
+    <!-- article body end  -->
+    <hr>
+    <!-- comments start  -->
+
+    <div class="comments_container form-group">
+
+      <form class="comments_form" action="article_page.html" method="post">
+      <p><label>Userame: </label>
+        <p><input type="text" name="comment_name" value="" class="username" required></p>
+      </p>
+
+      <p><label>Comment: </label>
+        <p><textarea name="post_comment" rows="5" cols="125"  class="post_comment" required></textarea></p>
+      </p>
+
+      <p><input type="submit" value="Submit comment">
+      </p>
+
+      </form>
+
+    </div>
+
+    <div class="comments_display">
+    </div>
+
+    <!-- comments end -->
+    <hr>
+
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){//jquery start
+
+      $.getJSON('http://localhost:3000/posts?id=+id', function(posts){
+        //loop to display
+        for(post of posts){
+        var article_title =(post.article_title);
+        var article_date =(post.article_date);
+        var article_text =(post.article_text);
+        var article_img =(post.article_img);
+        var article_id =(post.article_id);
+
+        $('.article_container').append('<h1 class="article_title">' + article_title + '</h1> <p class="article_date">' + article_date + '</p> <p class="article_text">' +  article_text+ '</p> <img src="' + article_img + '" alt="article image" class="article_image">');
+      };//loop end
+
+    });//json end
+
+
+      //submit comment start
+  $('.comments_form').submit(function(event){
+    event.preventDefault();
+
+    //fetch data in form
+    let username = $('.username').val();
+    let user_comment = $('.post_comment').val();
+
+    //send data to database
+    $.ajax({
+      url: 'http://localhost:3000/comments',
+      method: 'post',
+      data: {
+        "comment_name": username,
+        "post_comment": user_comment
+      }
+    }).done(function(saved_comment){//if successful register message to user
+      alert('Thank you for your comment!')
+    });
+});//end submit comments
+
+  //display comments
+
+  $.getJSON("http://localhost:3000/comments", function(comments){
+    // var comment_id =(comment.id);
+    //loop to display
+    for(comment of comments){
+    var username =(comment.comment_name);
+    var comment =(comment.post_comment);
+
+    $('.comments_display').append('<h4>' + username + '</h4> <p> <p style="border-bottom: solid 1px white;">' + comment + '</p> </p>');
+    };//loop end
+  }); // end display comments, json end
+
+});//jquery end
+</script>
+
+</html>

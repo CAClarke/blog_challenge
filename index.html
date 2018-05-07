@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <div class="navigation_container">
+      <nav class="navbar bg-dark navbar-dark justify-content-around fixed-top">
+        <a href="index.html"><img src="images/home-button.jpg" alt="Home button" id="home-button">ome </a>
+        <a href="archive.html">| Archive |</a>
+        <a href="index.html">| Register |</a>
+        <a href="article_page.html">| Contribute |</a>
+
+      </nav>
+    </div>
+    <!-- navbar end -->
+
+    <h1 class="heading">Register for Access</h1>
+
+    <div class="home_content">
+      <img src="images/code-mug.png" alt="" class="home_image">
+
+      <form class="registration_form" action="http://localhost:3000/users" method="post">
+        <input type="text" name="full_name" value="" required id="full_name" placeholder=" Your full name">
+        <input type="text" name="username" value="" required id="username" placeholder=" Your username">
+        <input type="email" name="email_address" value="" required id="email_address" placeholder=" example@email.com">
+        <input type="password" name="user_password" value="" required id="user_password" placeholder=" Your password ^_-">
+        <input type="submit" name="submit_registration" value="Register" id="registration_submit" class="btn btn-sm btn-outline-primary">
+
+      </form>
+
+    </div>
+
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){//jquery start
+  $('form.registration_form').submit(function(event){
+    event.preventDefault();
+
+    //fetch data in signup-form
+    let full_name = $('input[name="full_name"]').val();
+    let username = $('#username').val();
+    let email_address = $('input[name="email_address"]').val();
+    let password = $('input[name="user_password"]').val();
+
+    if(full_name.length == 0){
+      alert('Please enter your name');
+      return false;
+    }else if(username.length == 0){
+      alert('Please enter your username');
+      return false;
+    }else if(email_address.length == 0){
+      alert('Please enter your email address');
+      return false;
+    }else if(user_password.length == 0){
+      alert('Please enter your pasword');
+      return false;
+    };
+
+    //send data to database
+    $.ajax({
+      url: 'http://localhost:3000/users',
+      method: 'post',
+      data: {
+        "full_name": full_name,
+        "username": username,
+        "email_address": email_address,
+        "user_password": password
+      }
+    }).done(function(saved_user){//if successful register message to user
+      alert('You have successfully registered')
+    });
+  });
+
+
+
+
+
+});//jquery end
+
+</script>
+
+
+</html>

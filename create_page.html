@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Create Articles</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <div class="navigation_container">
+      <nav class="navbar bg-dark navbar-dark justify-content-around fixed-top">
+        <a href="index.html"><img src="images/home-button.jpg" alt="Home button" id="home-button">ome </a>
+        <a href="archive.html">| Archive |</a>
+        <a href="index.html">| Register |</a>
+        <a href="create_page.html">| Contribute |</a>
+
+      </nav>
+    </div>
+    <!-- navbar end -->
+
+
+      <h1 class="heading" style="margin-top: 10px;">New Post</h1>
+      <hr>
+
+      <!-- new post form start -->
+      <div class="postCreator_container">
+
+        <form class="new_post" action="http://localhost:3000/posts" method="post" id="post_form">
+
+          <input type="text" name="article_title" value="" placeholder="Article Title" class="post_title" required>
+          <input type="text" name="article_date" value="" placeholder="dd/mm/yy" class="post_date" required>
+
+          <input type="text" name="article_text" value="" placeholder="Article text" class="post_text" id="post_text" required>
+          <input type="" name="article_img" value="" placeholder="Image Link" class="post_image" required>
+          <input type="submit"  class="post_submit btn btn-outline-primary">
+
+<div id="summernote"></div>
+
+        </form>
+      </div>
+      <!-- new post form end -->
+
+   <script>
+   $(document).ready(function() {//jquery start
+
+      // summernote start
+      $('.post_text').summernote({
+         placeholder: 'Hello bootstrap 4',
+         tabsize: 2,
+         height: 100
+       }); //summernote end
+
+
+    }); //jquery end
+   </script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript">
+   $(document).ready(function(){//jquery start
+
+   $('form.new_post').submit(function(event){
+     event.preventDefault();
+
+     //fetch data in signup-form
+     let title = $('.post_title').val();
+     let date = $('.post_date').val();
+     let text = $('.article_text').val();
+     let image = $('.article_img').val();
+     //
+     // if(post_title.length == 0){
+     //   alert('Every man needs a dog and every article needs a title.');
+     //   return false;
+     // }else if(post_date.length == 0){
+     //   alert('Articles have birthdays too!');
+     //   return false;
+     // } debugger;
+     // else if(article_text.length == 0){
+     //   alert('Brevity may be the soul of wit but this is a bit short!');
+     //   return false;
+     // }else if(article_img.length == 0){
+     //   alert('A picture is worth a 1000 words afterall.');
+     //   return false;
+     // };
+
+     //send data to database
+     $.ajax({
+       url: 'http://localhost:3000/posts',
+       method: 'post',
+       data: {
+         "article_title": title,
+         "article_date": date,
+         "article_text": text,
+         "article_img": image
+       }
+     }).done(function(saved_post){//if successful post register message to user
+       alert('Thank you for your contribution')
+     });
+   });
+
+   });//jquery end
+
+
+
+  </body>
+</html>
