@@ -27,6 +27,13 @@
       "article_text": "lets go",
       "article_img": "https://images.pexels.com/photos/916335/pexels-photo-916335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "id": 4
+    },
+    {
+      "article_title": "New article is an article",
+      "article_date": "30/06/15",
+      "article_text": "post away articles and articles and articles",
+      "article_img": "https://images.pexels.com/photos/271265/pexels-photo-271265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "id": 5
     }
   ],
   "comments": [
@@ -74,6 +81,11 @@
       "comment_name": "newuser",
       "post_comment": "new comment testing",
       "id": 10
+    },
+    {
+      "comment_name": "art4 user",
+      "post_comment": "comment on article 4",
+      "id": 11
     }
   ],
   "users": [

@@ -65,7 +65,18 @@
   <script type="text/javascript">
     $(document).ready(function(){//jquery start
 
-      $.getJSON('http://localhost:3000/posts?id=+id', function(posts){
+    let url = window.location.href;
+      console.log(url)
+
+      // http://192.168.1.106:8080/article_page.html?id=1
+
+      var split_url = url.split("=");
+      console.log(split_url)
+
+      let id = split_url[1];
+      console.log(id)
+
+      $.getJSON('http://localhost:3000/posts?id='+id, function(posts){
         //loop to display
         for(post of posts){
         var article_title =(post.article_title);
