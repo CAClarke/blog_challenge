@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Article</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
 
     <body>
@@ -23,12 +23,7 @@
     <!-- article body start  -->
 
     <div class="article_container">
-
-      <!-- <h1 class="article_title" style="background-color:blue;">Title</h1>
-      <p class="article_date" style="background-color:blue;">date</p>
-      <p class="article_text" style="background-color:blue;">article</p>
-      <img src="https://cdn.pixabay.com/photo/2017/08/25/13/36/code-geek-2680204_960_720.png" alt="" class="article_image"> -->
-
+      <input type="submit" name="edit_button" value="Edit" id="edit_button" class="btn btn-sm btn-outline-primary">
     </div>
 
     <!-- article body end  -->
@@ -68,8 +63,6 @@
     let url = window.location.href;
       console.log(url)
 
-      // http://192.168.1.106:8080/article_page.html?id=1
-
       var split_url = url.split("=");
       console.log(split_url)
 
@@ -85,10 +78,15 @@
         var article_img =(post.article_img);
         var article_id =(post.article_id);
 
-        $('.article_container').append('<h1 class="article_title">' + article_title + '</h1> <p class="article_date">' + article_date + '</p> <p class="article_text">' +  article_text+ '</p> <img src="' + article_img + '" alt="article image" class="article_image">');
+        $('.article_container').append('<div class="article_text"> <h1 class="article_title">' + article_title + '</h1> <p class="article_date">' + article_date + '<p>' + article_text + '</p> </div> <img src="' + article_img + '" alt="article image" class="article_image">');
       };//loop end
 
     });//json end
+
+    //edit post
+    $('#edit_button').on('click', function(){
+      location.href="edit_post.html?id="+id;
+    });
 
 
       //submit comment start
@@ -98,6 +96,9 @@
     //fetch data in form
     let username = $('.username').val();
     let user_comment = $('.post_comment').val();
+    let post_id = id;
+
+    console.log(post_id)
 
     //send data to database
     $.ajax({
@@ -105,7 +106,8 @@
       method: 'post',
       data: {
         "comment_name": username,
-        "post_comment": user_comment
+        "post_comment": user_comment,
+        "post_id": post_id
       }
     }).done(function(saved_comment){//if successful register message to user
       alert('Thank you for your comment!')
@@ -114,7 +116,7 @@
 
   //display comments
 
-  $.getJSON("http://localhost:3000/comments", function(comments){
+  $.getJSON("http://localhost:3000/comments?post_id="+id, function(comments){
     // var comment_id =(comment.id);
     //loop to display
     for(comment of comments){

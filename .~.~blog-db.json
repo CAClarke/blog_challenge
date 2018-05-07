@@ -1,74 +1,64 @@
 {
   "posts": [
     {
-      "title": "test2",
-      "date": "today",
-      "article_text": "",
-      "article_img": "https://cdn.pixabay.com/photo/2018/02/23/09/01/binary-3175017_960_720.jpg",
-      "submit_post": "Post Article",
+      "article_title": "It started with HTML",
+      "article_date": "04/05/18",
+      "article_text": "<p>I came into coding a total newb- I really knew nothing other than what I'd seen of pages of code which may as well have&nbsp;</p><p><br></p><p>been the remains of a long dead alien language. From another universe.</p><p><br></p><p>HTML, as I have come to know it, is the most basic starting point for setting up a webpage. With HTML you are able to&nbsp;</p><p><br></p><p>create heading (with preset styling), paragraphs, lines, breaks, buttons, forms, text areas, links and much more. It is the&nbsp;</p><p><br></p><p>bare bones of the structure, allowing you to link other pages and packages to make your site functional and pretty. HTML&nbsp;</p><p><br></p><p>allows for very basic functionality, such as links (anchors), forms and page layout but requires other code to look like&nbsp;</p><p><br></p><p>something other than a terriblely boring Microsoft Word document.</p><p><br></p><p>As the first of the code languages I needed to learn I am glad it was by far the simplest. I won't say easiest as, like&nbsp;</p><p><br></p><p>every language, there are always hiccups and snags. Sometimes it's just a misplaced comma or bracket, other times a changed&nbsp;</p><p><br></p><p>'type' can throw off all of your styling!&nbsp;</p><p><br></p><p>I am still finding new tricks and interested to see how I can further my HTML acrobatics.</p>",
+      "files": "",
+      "article_img": " https://images.pexels.com/photos/326424/pexels-photo-326424.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "id": 1
     },
     {
-      "title": "test1",
-      "date": "today",
-      "article_text": "",
-      "article_img": "https://cdn.pixabay.com/photo/2018/02/23/09/01/binary-3175017_960_720.jpg",
-      "submit_post": "Post Article",
+      "article_title": "C what makes Sites Sexy",
+      "article_date": "05/05/18",
+      "article_text": "<p>Bad acronym puns aside, CSS is most simply put the code that makes a site visually appealing.&nbsp;</p><p><br></p><p>There are 3 ways (well, 4 if you count SASS I suppose) of styling your page.&nbsp;</p><p><br></p><p>Internal is styling done at the top of your HTML page between the head and body tags. External styling requires a separate&nbsp;</p><p><br></p><p>stylesheet (a .css page) linked to the page. The third type is inline styling and is done within in the specific element's&nbsp;</p><p><br></p><p>tags.&nbsp;</p><p><br></p><p>External stylesheets can be used for a more global styling of multiple webpages instead of having to style the same thing&nbsp;</p><p><br></p><p>repeatedly for each of them. On the otherhand, inline styling works only on the specific element on the specific page that&nbsp;</p><p><br></p><p>is styled.</p><p><br></p><p>Now, SASS, is another form of styling with external stylesheets. It requires 2 pages, an input.scss and an output.css page.&nbsp;</p><p><br></p><p>You link the 2 through your CMD so that what you type and setup in the input is translated by the programme into normal css&nbsp;</p><p><br></p><p>on the output page. The biggest advantage to SASS is that it allows you to create a single variable that consists of a&nbsp;</p><p><br></p><p>number of styling elements which can be used by itself. For instance, if you have a webpage with lots of text but only want&nbsp;</p><p><br></p><p>certain parts of the text and some headings to be bold, a different font and turquoise then you can create a variable in&nbsp;</p><p><br></p><p>SASS, let's call it \"special-text\" which has those styles. Then for each of the sections of text you want to target, give&nbsp;</p><p><br></p><p>them an ID or class which the CSS can target. You can then simply tell the ID or class to style with \"special-text\" instead&nbsp;</p><p><br></p><p>of writing the same code again and again.Less code, less chance of typos!</p><p><br></p><p>Overall, this is the part of coding I have found most appealing and where I am most capable. Given a challenge I can&nbsp;</p><p><br></p><p>already see how I want to structure a page or site, the pallette and arrangement of text and images. I enjoy working with&nbsp;</p><p><br></p><p>grids, especially broken grids, and figurng out how different trends are accomplished using CSS.</p><p><br></p><p>While it can be frustrating on occassion when things just don't seems to work, CSS is a logical coding language and often&nbsp;</p><p><br></p><p>has immedaitely visible results. Besides, who wants a boring site?</p>",
+      "files": "",
+      "article_img": " https://images.pexels.com/photos/159045/the-interior-of-the-repair-interior-design-159045.jpeg?  auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "id": 2
     },
     {
-      "article_title": "A title for an article",
-      "article_date": "06/10/86",
-      "article_text": "This is a new articledfrhjgfoiejkdmsla;kdfb",
-      "article_img": "https://cdn.pixabay.com/photo/2017/01/10/23/01/code-1970468_960_720.png",
+      "article_title": " That thing called Java Script",
+      "article_date": "06/05/18",
+      "article_text": "<p>While it is a necessity I have quickly come to understand why having some fluency in the language of JS is so desirable&nbsp;</p><p><br></p><p>among developers!&nbsp;</p><p><br></p><p>It is by far the more difficult of the code languages, and even the spoken languages, I have tried my hand at. And I've&nbsp;</p><p><br></p><p>learned basic Japanese!&nbsp;</p><p><br></p><p>I suspect my tendency to overthink things is part of the problem. While I have been told my thought processes are on track&nbsp;</p><p><br></p><p>for what I want the JS to do, I tend to try and think a few steps ahead and muddle it together. If not take a completely&nbsp;</p><p><br></p><p>different and difficult track. When I'm not getting 'unknown tokens' and 'undefined' errors.</p><div><br></div>",
+      "files": "",
+      "article_img": "https://images.pexels.com/photos/271265/pexels-photo-271265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "id": 3
     }
   ],
-  "comments":[],
+  "comments": [
+    {
+      "comment_name": "Azilver",
+      "post_comment": "This is a comment on article 1.",
+      "post_id": "1",
+      "id": 1
+    },
+    {
+      "comment_name": "Azilver",
+      "post_comment": "This is a comment on article 2.",
+      "post_id": "2",
+      "id": 2
+    },
+    {
+      "comment_name": "Azilver",
+      "post_comment": "This is a comment on article 3.",
+      "post_id": "3",
+      "id": 3
+    }
+  ],
   "users": [
     {
       "full_name": "Carrie Clarke",
       "username": "Azilver",
       "email_address": "azilver@hotmail.com",
-      "user_password": "pasworded",
+      "user_password": "password",
       "id": 1
     },
     {
       "full_name": "John Doe",
-      "username": "Person1",
-      "email_address": "email@email.com",
-      "user_password": "persondoe",
+      "username": "DoeBoy",
+      "email_address": "doe@email.com",
+      "user_password": "jane",
       "id": 2
-    },
-    {
-      "username": "Azilver",
-      "password": "pasworded",
-      "submit": "Go!",
-      "id": 3
-    },
-    {
-      "username": "Azilver",
-      "password": "psassword",
-      "submit": "Go!",
-      "id": 4
-    },
-    {
-      "username": "Azilver",
-      "password": "pasworded",
-      "submit": "Go!",
-      "id": 5
-    },
-    {
-      "username": "htgrfedgfr",
-      "password": "efegrg",
-      "submit": "Go!",
-      "id": 6
-    },
-    {
-      "username": "Azilver",
-      "password": "pasworded",
-      "submit": "Go!",
-      "id": 7
     }
   ]
 }

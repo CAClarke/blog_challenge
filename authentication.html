@@ -23,7 +23,7 @@
     <div class="authentication-container">
       <img src="images/code-girl.jpg" alt="code girl" class="authentication-image">
 
-      <form class="authentication-form" action="create_page.html" method="get">
+      <form class="authentication-form" action="create_page.html" method="post">
         <p>
           <input type="text" name="username" value="" class="authenticate-username" placeholder=" username" required>
         </p>
@@ -49,6 +49,8 @@
 
       $('.authentication-form').submit(function(event){
         event.preventDefault();
+        alert('working')
+        return false;
         //request to USERS to find specific user with filter
       let username =  $('.authenticate-username').val();
       let password =  $('.authenticate-password').val();
@@ -60,20 +62,21 @@
         if(users.length > 0){
         let found_user_password = data[0].user_password;
         console.log(found_user_password)
-        debugger;
+
           if(found_user_password == password){
             window.location.href = 'create_page.html';
-          }else(found_user_password != password){
+          }else(found_user_password!=password){
             $('.notice').html('Password incorrect, please try again').show();
           };
+
         }else{
           $('.notice').html('User not found, please register to contribute to this blog.').show();
         };
-      }
+      };
       });
 
       });//jquery end
-
+</script>
 
 
 </html>
