@@ -118,7 +118,7 @@ nav a:hover{
 }
 
 postCreator_container styling
-#post_form{
+.new_post{
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
   grid-template-rows: 1fr 2fr 1fr 10fr 2fr 2fr 1fr;

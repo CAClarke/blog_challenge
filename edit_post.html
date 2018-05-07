@@ -37,7 +37,7 @@
           <input type="text" name="article_title" value="" placeholder="Article Title" class="post_title" required>
           <input type="text" name="article_date" value="" placeholder="dd/mm/yy" class="post_date" required>
           <textarea name="article_text" rows="8" cols="80" id="summernote" class="post_text" placeholder="Article text"></textarea>
-          <input type="" name="article_img" value="" placeholder="Image Link" class="post_image" required>
+          <input type="text" name="article_img" value="" placeholder="Image Link" class="post_image" required>
           <input type="submit"  class="post_submit btn btn-outline-primary">
 
 
@@ -76,34 +76,34 @@
 
           $('.post_title').val(post.article_title)
           $('.post_date').val(post.article_date)
-          $('#summernote').summernote('article_text');
-          // $('.article_text').val(post.article_text)
-          $('.article_img').val(post.article_img)
+          $('.post_image').val(post.article_img)
+          $('#summernote').summernote(post.article_text);
+          $('#summernote').val(post.article_text)
         }
         });
-  // $('form.new_post').submit(function(event){
-  //   event.preventDefault();
-  //
-  //   //fetch data in signup-form
-  //   let title = $('.post_title').val();
-  //   let date = $('.post_date').val();
-  //   let text = $('.article_text').val();
-  //   let image = $('.article_img').val();
-  //
-  //   //send data to database
-  //   $.ajax({
-  //     url: 'http://localhost:3000/posts',
-  //     method: 'patch',
-  //     data: {
-  //       "article_title": title,
-  //       "article_date": date,
-  //       "article_text": text,
-  //       "article_img": image
-  //     }
-  //   }).done(function(saved_post){//if successful post register message to user
-  //     alert('Thank you for your contribution')
-  //   });
-  // });
+    $('form.new_post').submit(function(event){
+      event.preventDefault();
+
+      //fetch data in signup-form
+      let title = $('.post_title').val();
+      let date = $('.post_date').val();
+      let text = $('.article_text').val();
+      let image = $('.article_img').val();
+
+      //send data to database
+      $.ajax({
+        url: 'http://localhost:3000/posts?'+id,
+        method: 'patch',
+        data: {
+          "article_title": title,
+          "article_date": date,
+          "article_text": text,
+          "article_img": image
+        }
+      }).done(function(saved_post){//if successful post register message to user
+        alert('Thank you for your contribution')
+      });
+    });
 
   });//jquery end
 </script>

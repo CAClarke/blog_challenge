@@ -23,6 +23,40 @@
       "files": "",
       "article_img": "https://images.pexels.com/photos/271265/pexels-photo-271265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "id": 3
+    },
+    {
+      "article_title": "Blog post",
+      "article_date": "16/08/16",
+      "id": 4
+    },
+    {
+      "article_title": "Lorem post",
+      "article_date": "18/07/17",
+      "id": 5
+    },
+    {
+      "article_title": "Lorem post",
+      "article_date": "18/07/17",
+      "id": 6
+    },
+    {
+      "article_title": "test",
+      "article_date": "date",
+      "article_text": "<p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque pretium erat. Cras semper egestas lacus, ut pharetra dui finibus at. Quisque et scelerisque elit. Quisque quis ligula ac metus venenatis faucibus non quis nisi. Aenean ullamcorper sit amet lorem eget rutrum. Sed sed mollis magna, sed auctor quam. Vestibulum rhoncus in lectus at ultrices. Nam eu mollis sapien. Fusce a nunc sit amet sem rhoncus pellentesque. Morbi vulputate lacinia pellentesque. Nulla lacinia euismod magna vitae dapibus.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">In tincidunt dignissim laoreet. Morbi at interdum elit. Cras et efficitur lectus, ac tempor urna. Duis orci leo, lobortis condimentum nunc sit amet, vestibulum tempor diam. Aliquam malesuada erat augue, sed tincidunt nulla congue eget. Morbi interdum tellus eget aliquam viverra. Nulla tincidunt, nibh in sodales lobortis, libero nibh congue augue, semper maximus massa massa vel ex. Nulla porttitor dolor vel diam aliquam, quis auctor dui varius. Fusce ut placerat ex. Etiam eget pretium dui. In ultrices, orci nec convallis porta, urna nisi sagittis mi, et faucibus mauris lacus nec arcu. Etiam venenatis volutpat tortor non porta.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Fusce tempor convallis leo, ac fringilla tellus finibus ut. Etiam sed nunc in lectus bibendum gravida. Duis pulvinar tellus eget odio commodo, sed tempus nibh placerat. Morbi consequat a nunc in lobortis. Vestibulum lobortis, mi nec imperdiet tincidunt, turpis augue semper justo, quis consequat nibh sapien non dolor. Suspendisse sit amet convallis nisl, sed semper arcu. Mauris eget felis ligula. Nulla dignissim quam eget dignissim pharetra. Integer eget congue quam. Proin gravida libero quis tellus posuere, ut aliquam sem auctor. Proin at scelerisque diam. Mauris imperdiet, purus et faucibus feugiat, tellus justo venenatis risus, ut luctus metus enim vitae massa.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Suspendisse laoreet lobortis sapien, eget pretium mauris ullamcorper vitae. In ultrices lacus id nisi mollis ullamcorper. Ut porta pulvinar varius. Suspendisse non elit ut neque aliquet malesuada sed eu lacus. Nullam tristique orci ac fermentum scelerisque. Ut at tincidunt nisl. Nam dictum est vel lectus pulvinar vehicula. Curabitur facilisis arcu ligula, vitae laoreet velit vehicula tincidunt. Suspendisse mattis suscipit massa et iaculis. Proin volutpat pulvinar semper. Suspendisse vitae est quis metus rutrum eleifend non sit amet sapien. Duis a orci purus.</p>",
+      "id": 7
+    },
+    {
+      "article_title": "lorem 2",
+      "article_date": "date 2",
+      "article_text": "<p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque pretium erat. Cras semper egestas lacus, ut pharetra dui finibus at. Quisque et scelerisque elit. Quisque quis ligula ac metus venenatis faucibus non quis nisi. Aenean ullamcorper sit amet lorem eget rutrum. Sed sed mollis magna, sed auctor quam. Vestibulum rhoncus in lectus at ultrices. Nam eu mollis sapien. Fusce a nunc sit amet sem rhoncus pellentesque. Morbi vulputate lacinia pellentesque. Nulla lacinia euismod magna vitae dapibus.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">In tincidunt dignissim laoreet. Morbi at interdum elit. Cras et efficitur lectus, ac tempor urna. Duis orci leo, lobortis condimentum nunc sit amet, vestibulum tempor diam. Aliquam malesuada erat augue, sed tincidunt nulla congue eget. Morbi interdum tellus eget aliquam viverra. Nulla tincidunt, nibh in sodales lobortis, libero nibh congue augue, semper maximus massa massa vel ex. Nulla porttitor dolor vel diam aliquam, quis auctor dui varius. Fusce ut placerat ex. Etiam eget pretium dui. In ultrices, orci nec convallis porta, urna nisi sagittis mi, et faucibus mauris lacus nec arcu. Etiam venenatis volutpat tortor non porta.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Fusce tempor convallis leo, ac fringilla tellus finibus ut. Etiam sed nunc in lectus bibendum gravida. Duis pulvinar tellus eget odio commodo, sed tempus nibh placerat. Morbi consequat a nunc in lobortis. Vestibulum lobortis, mi nec imperdiet tincidunt, turpis augue semper justo, quis consequat nibh sapien non dolor. Suspendisse sit amet convallis nisl, sed semper arcu. Mauris eget felis ligula. Nulla dignissim quam eget dignissim pharetra. Integer eget congue quam. Proin gravida libero quis tellus posuere, ut aliquam sem auctor. Proin at scelerisque diam. Mauris imperdiet, purus et faucibus feugiat, tellus justo venenatis risus, ut luctus metus enim vitae massa.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px;\">Suspendisse laoreet lobortis sapien, eget pretium mauris ullamcorper vitae. In ultrices lacus id nisi mollis ullamcorper. Ut porta pulvinar varius. Suspendisse non elit ut neque aliquet malesuada sed eu lacus. Nullam tristique orci ac fermentum scelerisque. Ut at tincidunt nisl. Nam dictum est vel lectus pulvinar vehicula. Curabitur facilisis arcu ligula, vitae laoreet velit vehicula tincidunt. Suspendisse mattis suscipit massa et iaculis. Proin volutpat pulvinar semper. Suspendisse vitae est quis metus rutrum eleifend non sit amet sapien. Duis a orci purus.</p>",
+      "id": 8
+    },
+    {
+      "article_title": "test",
+      "article_date": "tester",
+      "article_text": "<p>testint=g testig</p>",
+      "article_img": "https://images.pexels.com/photos/236238/pexels-photo-236238.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      "id": 9
     }
   ],
   "comments": [
@@ -43,6 +77,12 @@
       "post_comment": "This is a comment on article 3.",
       "post_id": "3",
       "id": 3
+    },
+    {
+      "comment_name": "User",
+      "post_comment": "comment 1",
+      "post_id": "1",
+      "id": 4
     }
   ],
   "users": [
@@ -59,6 +99,13 @@
       "email_address": "doe@email.com",
       "user_password": "jane",
       "id": 2
+    },
+    {
+      "full_name": "Jane Doe",
+      "username": "DoeGirl",
+      "email_address": "jane@email.com",
+      "user_password": "doedoe",
+      "id": 3
     }
   ]
 }
