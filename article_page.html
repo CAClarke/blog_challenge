@@ -14,7 +14,7 @@
           <a href="index.html"><img src="images/home-button.jpg" alt="Home button" id="home-button">ome </a>
           <a href="archive.html">| Archive |</a>
           <a href="index.html">| Register |</a>
-          <a href="create_page.html">| Contribute |</a>
+          <a href="authentication.html">| Contribute |</a>
 
         </nav>
       </div>
@@ -73,12 +73,13 @@
         //loop to display
         for(post of posts){
         var article_title =(post.article_title);
+        var article_author =(post.article_author);
         var article_date =(post.article_date);
         var article_text =(post.article_text);
         var article_img =(post.article_img);
         var article_id =(post.article_id);
 
-        $('.article_container').append('<div class="article_text"> <h1 class="article_title">' + article_title + '</h1> <p class="article_date">' + article_date + '<p>' + article_text + '</p> </div> <img src="' + article_img + '" alt="article image" class="article_image">');
+        $('.article_container').append('<div class="article_text"> <h1 class="article_title">' + article_title + '</h1> <p class="article_author">' + article_author + '</p> <p class="article_date">' + article_date + '</p> <p>' + article_text + '</p> </div> <img src="' + article_img + '" alt="article image" class="article_image">');
       };//loop end
 
     });//json end

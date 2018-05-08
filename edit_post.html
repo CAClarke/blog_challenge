@@ -20,7 +20,7 @@
         <a href="index.html"><img src="images/home-button.jpg" alt="Home button" id="home-button">ome </a>
         <a href="archive.html">| Archive |</a>
         <a href="index.html">| Register |</a>
-        <a href="create_page.html">| Contribute |</a>
+        <a href="authentication.html">| Contribute |</a>
 
       </nav>
     </div>
@@ -35,6 +35,7 @@
         <form action="archive.html" method="patch" id="edit_form">
 
           <input type="text" name="article_title" value="" placeholder="Article Title" class="post_title" required>
+          <input type="text" name="article_author" value="" placeholder="Username" class="post_author" required>
           <input type="text" name="article_date" value="" placeholder="dd/mm/yy" class="post_date" required>
           <textarea name="article_text" rows="8" cols="80" id="summernote" class="post_text" placeholder="Article text"></textarea>
           <input type="text" name="article_img" value="" placeholder="Image Link" class="post_image" required>
@@ -75,10 +76,10 @@
           console.log(article_text)
 
           $('.post_title').val(post.article_title)
+          $('.post_author').val(post.article_author)
           $('.post_date').val(post.article_date)
+          $('#summernote').summernote("code", post.article_text);
           $('.post_image').val(post.article_img)
-          $('#summernote').summernote(post.article_text);
-          // $('#summernote').val(post.article_text)
         }
         });
 
@@ -88,21 +89,23 @@
 
       //fetch data in signup-form
       let title = $('.post_title').val();
+      let author = $('.post_author').val();
       let date = $('.post_date').val();
       let text = $('.article_text').val();
       let image = $('.article_img').val();
 
       //send data to database
       $.ajax({
-        url: 'http://localhost:3000/posts?'+id,
+        url: 'http://localhost:3000/posts/'+id,
         method: 'patch',
         data: {
           "article_title": title,
+          "article_author": author,
           "article_date": date,
           "article_text": text,
           "article_img": image
         }
-      }).done(function(edited_post){//if successful post register message to user
+      }).done(function(edited_post){
         alert('Your changes have been saved.')
       });
     });

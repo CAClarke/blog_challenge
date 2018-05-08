@@ -14,7 +14,8 @@
       "article_text": "<p>Bad acronym puns aside, CSS is most simply put the code that makes a site visually appealing.&nbsp;</p><p><br></p><p>There are 3 ways (well, 4 if you count SASS I suppose) of styling your page.&nbsp;</p><p><br></p><p>Internal is styling done at the top of your HTML page between the head and body tags. External styling requires a separate&nbsp;</p><p><br></p><p>stylesheet (a .css page) linked to the page. The third type is inline styling and is done within in the specific element's&nbsp;</p><p><br></p><p>tags.&nbsp;</p><p><br></p><p>External stylesheets can be used for a more global styling of multiple webpages instead of having to style the same thing&nbsp;</p><p><br></p><p>repeatedly for each of them. On the otherhand, inline styling works only on the specific element on the specific page that&nbsp;</p><p><br></p><p>is styled.</p><p><br></p><p>Now, SASS, is another form of styling with external stylesheets. It requires 2 pages, an input.scss and an output.css page.&nbsp;</p><p><br></p><p>You link the 2 through your CMD so that what you type and setup in the input is translated by the programme into normal css&nbsp;</p><p><br></p><p>on the output page. The biggest advantage to SASS is that it allows you to create a single variable that consists of a&nbsp;</p><p><br></p><p>number of styling elements which can be used by itself. For instance, if you have a webpage with lots of text but only want&nbsp;</p><p><br></p><p>certain parts of the text and some headings to be bold, a different font and turquoise then you can create a variable in&nbsp;</p><p><br></p><p>SASS, let's call it \"special-text\" which has those styles. Then for each of the sections of text you want to target, give&nbsp;</p><p><br></p><p>them an ID or class which the CSS can target. You can then simply tell the ID or class to style with \"special-text\" instead&nbsp;</p><p><br></p><p>of writing the same code again and again.Less code, less chance of typos!</p><p><br></p><p>Overall, this is the part of coding I have found most appealing and where I am most capable. Given a challenge I can&nbsp;</p><p><br></p><p>already see how I want to structure a page or site, the pallette and arrangement of text and images. I enjoy working with&nbsp;</p><p><br></p><p>grids, especially broken grids, and figurng out how different trends are accomplished using CSS.</p><p><br></p><p>While it can be frustrating on occassion when things just don't seems to work, CSS is a logical coding language and often&nbsp;</p><p><br></p><p>has immedaitely visible results. Besides, who wants a boring site?</p>",
       "files": "",
       "article_img": " https://images.pexels.com/photos/159045/the-interior-of-the-repair-interior-design-159045.jpeg?  auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "id": 2
+      "id": 2,
+      "article_author": "Azilver"
     },
     {
       "article_title": " That thing called Java Script",
@@ -57,6 +58,14 @@
       "article_text": "<p>testint=g testig</p>",
       "article_img": "https://images.pexels.com/photos/236238/pexels-photo-236238.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
       "id": 9
+    },
+    {
+      "article_title": "Author article",
+      "article_author": "new user edit",
+      "article_date": "06/10/86",
+      "article_text": "<p>this is the article to test author</p>",
+      "article_img": "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "id": 10
     }
   ],
   "comments": [

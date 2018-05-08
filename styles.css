@@ -100,8 +100,9 @@ nav a:hover{
   grid-column: 3/6;
   grid-row: 2/3;
   height: 350px;
-  border: white dotted 2px;
+  border: #b6c9ff dotted 2px;
 }
+
 #authentication-form{
   grid-column: 6/10;
   grid-row: 2/3;
@@ -109,12 +110,15 @@ nav a:hover{
 }
 
 .notice{
-  background-color: red;
+  background-color: #b6c9ff;
   color: black;
-  border: black solid 2px;
+  text-align: center;
+  font-weight: bold;
   display: none;
   grid-column: 4/8;
   grid-row: 3/4;
+  width: 190px;
+  padding: 10px;
 }
 
 postCreator_container styling
@@ -130,6 +134,15 @@ postCreator_container styling
   grid-column: 3/4;
   grid-row: 2/3;
   text-align: center;
+  margin-left: 45.5%;
+}
+.post_author{
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  text-align: center;
+  margin-left: 200px;
+  margin: 15px;
   margin-left: 45.5%;
 }
 .post_date{
@@ -175,6 +188,14 @@ postCreator_container styling
   text-align: center;
   padding: 35px;
   border-bottom: solid 3px #b6c9ff;
+}
+.article_author{
+  grid-column: 3/4;
+  grid-row: 3/4;
+  text-align: right;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #b6c9ff;
 }
 .article_date{
   grid-column: 4/5;
@@ -225,7 +246,7 @@ postCreator_container styling
   border-radius: 1%;
   width: 70%;
   height: auto;
-  margin: 15%;
+  margin: 2% 15% 2% 15%;
   padding: 10px;
 }
 

@@ -35,6 +35,7 @@
         <form action="http://localhost:3000/posts" method="post" class="new_post">
 
           <input type="text" name="article_title" value="" placeholder="Article Title" class="post_title" required>
+          <input type="text" name="article_author" value="" placeholder="Username" class="post_author" required>
           <input type="text" name="article_date" value="" placeholder="dd/mm/yy" class="post_date" required>
           <textarea name="article_text" rows="8" cols="80" id="summernote" class="post_text" placeholder="Article text"></textarea>
           <input type="" name="article_img" value="" placeholder="Image Link" id="post_image" class="post_image" required>
@@ -64,6 +65,7 @@
 
     //fetch data in signup-form
     let title = $('.post_title').val();
+    let author = $('.post_author').val();
     let date = $('.post_date').val();
     let text = $('#summernote').val();
     let image = $('#post_image').val();
@@ -74,6 +76,7 @@
       method: 'post',
       data: {
         "article_title": title,
+        "article_author": author,
         "article_date": date,
         "article_text": text,
         "article_img": image
