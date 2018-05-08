@@ -23,12 +23,12 @@
     <div class="authentication-container">
       <img src="images/code-girl.jpg" alt="code girl" class="authentication-image">
 
-      <form class="authentication-form" action="create_page.html" method="post">
+      <form id="authentication-form" action="create_page.html" method="post">
         <p>
           <input type="text" name="username" value="" class="authenticate-username" placeholder=" username" required>
         </p>
         <p>
-          <input type="password" name="password" value="" class="authenticate-password" placeholder=" password">
+          <input type="password" name="password" value="" class="authenticate-password" placeholder=" password" required>
         </p>
         <p>
           <input type="submit" name="" value="Go!" class="authenticate-submit btn btn-sm btn-outline-primary"
@@ -47,33 +47,33 @@
   <script type="text/javascript">
     $(document).ready(function(){//jquery start
 
-      $('.authentication-form').submit(function(event){
+      $('#authentication-form').submit(function(event){
         event.preventDefault();
-        alert('working')
-        return false;
+
         //request to USERS to find specific user with filter
       let username =  $('.authenticate-username').val();
       let password =  $('.authenticate-password').val();
       console.log(username)
-      debugger;
 
-      $getJSON('http://localhost:3000/users?username='+username, function(users){
+
+      $.getJSON('http://localhost:3000/users?username='+username, function(users){
 
         if(users.length > 0){
-        let found_user_password = data[0].user_password;
+        let found_user_password = users[0].user_password;
         console.log(found_user_password)
 
           if(found_user_password == password){
-            window.location.href = 'create_page.html';
-          }else(found_user_password!=password){
-            $('.notice').html('Password incorrect, please try again').show();
+            window.location.replace("create_page.html");
+          }else if(found_user_password != password){
+            $('.notice').html('Password incorrect, please try again.').show();
           };
 
         }else{
           $('.notice').html('User not found, please register to contribute to this blog.').show();
-        };
-      };
-      });
+        };//else end
+
+      });//json end
+    });//submit end
 
       });//jquery end
 </script>

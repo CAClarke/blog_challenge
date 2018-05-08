@@ -102,7 +102,7 @@ nav a:hover{
   height: 350px;
   border: white dotted 2px;
 }
-.authentication-form{
+#authentication-form{
   grid-column: 6/10;
   grid-row: 2/3;
   margin-top: 100px;

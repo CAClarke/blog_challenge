@@ -77,11 +77,13 @@
           $('.post_title').val(post.article_title)
           $('.post_date').val(post.article_date)
           $('.post_image').val(post.article_img)
-          // $('#summernote').summernote(post.article_text);
-          $('#summernote').val(post.article_text)
+          $('#summernote').summernote(post.article_text);
+          // $('#summernote').val(post.article_text)
         }
         });
-    $('form.edit_form').submit(function(event){
+
+      //submit editing
+    $('#edit_form').submit(function(event){
       event.preventDefault();
 
       //fetch data in signup-form
