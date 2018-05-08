@@ -32,7 +32,7 @@
       <!-- new post form start -->
       <div class="postCreator_container">
 
-        <form action="http://localhost:3000/posts" method="patch" id="post_form">
+        <form action="archive.html" method="patch" id="edit_form">
 
           <input type="text" name="article_title" value="" placeholder="Article Title" class="post_title" required>
           <input type="text" name="article_date" value="" placeholder="dd/mm/yy" class="post_date" required>
@@ -77,11 +77,11 @@
           $('.post_title').val(post.article_title)
           $('.post_date').val(post.article_date)
           $('.post_image').val(post.article_img)
-          $('#summernote').summernote(post.article_text);
+          // $('#summernote').summernote(post.article_text);
           $('#summernote').val(post.article_text)
         }
         });
-    $('form.new_post').submit(function(event){
+    $('form.edit_form').submit(function(event){
       event.preventDefault();
 
       //fetch data in signup-form
@@ -100,8 +100,8 @@
           "article_text": text,
           "article_img": image
         }
-      }).done(function(saved_post){//if successful post register message to user
-        alert('Thank you for your contribution')
+      }).done(function(edited_post){//if successful post register message to user
+        alert('Your changes have been saved.')
       });
     });
 
