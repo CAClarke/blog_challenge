@@ -49,6 +49,12 @@
       "post_comment": "comment 1",
       "post_id": "1",
       "id": 4
+    },
+    {
+      "comment_name": "DoeBoy",
+      "post_comment": "A new comment on article 2!",
+      "post_id": "2",
+      "id": 5
     }
   ],
   "users": [

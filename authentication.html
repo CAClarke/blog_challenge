@@ -31,9 +31,9 @@
           <input type="password" name="password" value="" class="authenticate-password" placeholder=" password" required>
         </p>
         <p>
-          <input type="submit" name="" value="Go!" class="authenticate-submit btn btn-sm btn-outline-primary"
+          <input type="submit" name="" value="Go!" class="authenticate-submit btn btn-sm btn-outline-primary">
 
-          <a href="index.html"><input type="text" name="" value="Register" class="btn btn-sm btn-outline-primary"></a>
+          <input type="button" name="" value="Register" class="btn btn-sm btn-outline-primary register_button">
         </p>
         <hr>
         <p class="notice"></p>
@@ -75,7 +75,11 @@
       });//json end
     });//submit end
 
-      });//jquery end
+      $('.register_button').on('click', function(){
+        window.location.href = 'index.html';
+      });
+
+    });//jquery end
 </script>
 
 
