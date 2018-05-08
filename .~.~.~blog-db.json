@@ -1,0 +1,77 @@
+{
+  "posts": [
+    {
+      "article_title": "It started with HTML",
+      "article_author": "Azilver",
+      "article_date": "04/05/18",
+      "article_text": "<p><span style=\"font-size: 1rem;\">I came into coding a total newb- I really knew nothing other than what I'd seen of pages of code which may as well have been the remains of a long dead alien language. From another universe.</span><br></p><p><span style=\"font-size: 1rem;\">HTML, as I have come to know it, is the most basic starting point for setting up a web page. With HTML you are able to create heading (with preset styling), paragraphs, lines, breaks, buttons, forms, text areas, links and much more. It is the bare bones of the structure, allowing you to link other pages and packages to make your site functional and pretty. HTML allows for very basic functionality, such as links (anchors), forms and page layout but requires other code to look like something other than a terribly boring 'Microsoft Word' document.</span></p><p>As the first of the code languages I needed to learn I am glad it was by far the simplest. I won't say easiest as, like every language, there are always hiccups and snags. Sometimes it's just a misplaced comma or bracket, other times a changed 'type' can throw off all of your styling!&nbsp;</p><p>I am still finding new tricks and interested to see how I can further my HTML acrobatics.</p>",
+      "article_img": "https://images.pexels.com/photos/326424/pexels-photo-326424.jpeg",
+      "id": 1
+    },
+    {
+      "article_title": "C what makes Sites Sexy",
+      "article_author": "Azilver",
+      "article_date": "05/05/18",
+      "article_text": "<p>Bad acronym puns aside, CSS is most simply put the code that makes a site visually appealing.&nbsp;</p><p>There are 3 ways (well, 4 if you count SASS I suppose) of styling your page.&nbsp;</p><p>Internal is styling done at the top of your HTML page between the head and body tags. External styling requires a separate stylesheet (a .css page) linked to the page. The third type is inline styling and is done within in the specific element's tags.&nbsp;</p><p>External stylesheets can be used for a more global styling of multiple web pages instead of having to style the same thing repeatedly for each of them. On the other hand, inline styling works only on the specific element on the specific page that is styled.</p><p>Now, SASS, is another form of styling with external stylesheets. It requires 2 pages, an input.scss and an output.css page. You link the 2 through your CMD so that what you type and setup in the input is translated by the programme into normal css on the output page. The biggest advantage to SASS is that it allows you to create a single variable that consists of a number of styling elements which can be used by itself. For instance, if you have a web page with lots of text but only want certain parts of the text and some headings to be bold, a different font and turquoise then you can create a variable in SASS, let's call it \"special-text\" which has those styles. Then for each of the sections of text you want to target, give them an ID or class which the CSS can target. You can then simply tell the ID or class to style with \"special-text\" instead of writing the same code again and again.Less code, less chance of typos!</p><p>Overall, this is the part of coding I have found most appealing and where I am most capable. Given a challenge I can already see how I want to structure a page or site, the palette and arrangement of text and images. I enjoy working with grids, especially broken grids, and figuring out how different trends are accomplished using CSS.</p><p>While it can be frustrating on occasion when things just don't seems to work, CSS is a logical coding language and often has immediately visible results. Besides, who wants a boring site?</p>",
+      "article_img": "https://images.pexels.com/photos/159045/the-interior-of-the-repair-interior-design-159045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "id": 2
+    },
+    {
+      "article_title": " That thing called Java Script",
+      "article_author": "Azilver",
+      "article_date": "06/05/18",
+      "article_text": "<p>While it is a necessity in development I have quickly come to understand why&nbsp;<span style=\"font-size: 1rem;\">having some fluency in the language of JS is so desirable among developers- it&nbsp;</span><span style=\"font-size: 1rem;\">can be super finicky and you'll likely never know all the methods!&nbsp;</span></p><p><span style=\"font-size: 1rem;\">It is by far the more difficult of the code languages, and even the spoken&nbsp;</span><span style=\"font-size: 1rem;\">languages, I have tried my hand at so far. And I've learned basic Japanese! It&nbsp;</span><span style=\"font-size: 1rem;\">requires a great attention to detail, the ability to think in multiple&nbsp;</span><span style=\"font-size: 1rem;\">dimensions and step-by-step planning.</span></p><p><span style=\"font-size: 1rem;\">I suspect my tendency to overthink things is part of the challenge. While I&nbsp;</span><span style=\"font-size: 1rem;\">have been told my thought processes are on track for what I want the JS to do,&nbsp;</span><span style=\"font-size: 1rem;\">I tend to try and think a few steps ahead and muddle it together. If not take&nbsp;</span><span style=\"font-size: 1rem;\">a completely different and difficult track. When I'm not getting 'unknown&nbsp;</span><span style=\"font-size: 1rem;\">tokens' and 'undefined' errors.</span></p><p><span style=\"font-size: 1rem;\">This particular 'blog' challenge has allowed me to stretch my JS ability,&nbsp;</span><span style=\"font-size: 1rem;\">helping me to train my thinking and methods.&nbsp;</span><span style=\"font-size: 1rem;\">I started by designing a framework on paper, planning what I'd need and some&nbsp;</span><span style=\"font-size: 1rem;\">idea of what functionality I wanted. Then I designed my pages in HTML and&nbsp;</span><span style=\"font-size: 1rem;\">styled them, giving myself some 'dummy code' examples of what I wanted and&nbsp;</span><span style=\"font-size: 1rem;\">where- which is half the challenge completed by end of day 1! I then dived&nbsp;</span><span style=\"font-size: 1rem;\">into the JS, setting up and populating my database before using it to populate&nbsp;</span><span style=\"font-size: 1rem;\">my pages as needed.&nbsp;</span></p><p><span style=\"font-size: 1rem;\">In this challenge we have been required to work out how to perform certain functions and even&nbsp;</span><span style=\"font-size: 1rem;\">how to work around frustrating parts. It is particularly satisfying to crack&nbsp;</span><span style=\"font-size: 1rem;\">the code, as it were, and get that pest to work!&nbsp;</span></p>",
+      "article_img": "https://images.pexels.com/photos/271265/pexels-photo-271265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "comment_name": "Azilver",
+      "post_comment": "This is a comment on article 1.",
+      "post_id": "1",
+      "id": 1
+    },
+    {
+      "comment_name": "Azilver",
+      "post_comment": "This is a comment on article 2.",
+      "post_id": "2",
+      "id": 2
+    },
+    {
+      "comment_name": "Azilver",
+      "post_comment": "This is a comment on article 3.",
+      "post_id": "3",
+      "id": 3
+    },
+    {
+      "comment_name": "User",
+      "post_comment": "comment 1",
+      "post_id": "1",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "full_name": "Carrie Clarke",
+      "username": "Azilver",
+      "email_address": "azilver@hotmail.com",
+      "user_password": "password",
+      "id": 1
+    },
+    {
+      "full_name": "John Doe",
+      "username": "DoeBoy",
+      "email_address": "doe@email.com",
+      "user_password": "jane",
+      "id": 2
+    },
+    {
+      "full_name": "Jane Doe",
+      "username": "DoeGirl",
+      "email_address": "jane@email.com",
+      "user_password": "doedoe",
+      "id": 3
+    }
+  ]
+}

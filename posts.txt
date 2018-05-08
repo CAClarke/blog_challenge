@@ -35,11 +35,17 @@ https://images.pexels.com/photos/159045/the-interior-of-the-repair-interior-desi
 
 That thing called Java Script
 
-While it is a necessity I have quickly come to understand why having some fluency in the language of JS is so desirable among developers! 
+While it is a necessity in development I have quickly come to understand why having some fluency in the language of JS is so desirable among developers- it can be super finicky and you'll likely never know all the methods! 
 
-It is by far the more difficult of the code languages, and even the spoken languages, I have tried my hand at. And I've learned basic Japanese! 
+It is by far the more difficult of the code languages, and even the spoken languages, I have tried my hand at so far. And I've learned basic Japanese! It requires a great attention to detail, the ability to think in multiple dimensions and step-by-step planning.
 
-I suspect my tendency to overthink things is part of the problem. While I have been told my thought processes are on track for what I want the JS to do, I tend to try and think a few steps ahead and muddle it together. If not take a completely different and difficult track. When I'm not getting 'unknown tokens' and 'undefined' errors.
+I suspect my tendency to overthink things is part of the challenge. While I have been told my thought processes are on track for what I want the JS to do, I tend to try and think a few steps ahead and muddle it together. If not take a completely different and difficult track. When I'm not getting 'unknown tokens' and 'undefined' errors.
+
+This particular 'blog' challenge has allowed me to stretch my JS ability, helping me to train my thinking and methods. 
+
+I started by designing a framework on paper, planning what I'd need and some idea of what functionality I wanted. Then I designed my pages in HTML and styled them, giving myself some 'dummy code' examples of what I wanted and where- which is half the challenge completed by end of day 1!. I then dived into the JS, setting up and populating my database before using it to populate my pages as needed.
+
+We have been required to work out how to perform certain functions and even how to work around frustrating parts. It is particularly satisfying to crack the code, as it were, and get that pest to work! 
 
 
 
