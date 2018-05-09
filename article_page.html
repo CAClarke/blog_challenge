@@ -60,14 +60,25 @@
   <script type="text/javascript">
     $(document).ready(function(){//jquery start
 
-      let url = window.location.href;
-      console.log(url)
+      //how I originally isolated the ID from the URL
+      // let url = window.location.href;
+      // console.log(url)
+      //
+      // var split_url = url.split("=");
+      // console.log(split_url)
+      //
+      // let id = split_url[1];
+      // console.log(id)
 
-      var split_url = url.split("=");
-      console.log(split_url)
+      //other method
+      let this_url =window.location.href;
+      console.log(this_url)
+      var url_string = this_url;
+      console.log(url_string)
+      var url = new URL(url_string);
+      var id = url.searchParams.get("id");
+      console.log(id);
 
-      let id = split_url[1];
-      console.log(id)
 
       $.getJSON('http://localhost:3000/posts?id='+id, function(posts){
         //loop to display
